@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../imagens/fundo-madeira.jpg) black no-repeat ;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#botoes{
+    padding-top: 50px;
+    width: 7vw;
+    height: 90vh;
+    text-align: center;
+    float: right;
+    margin-right: 20px;
+}
+
+#botoes img{
+    margin-top: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px black;
+    /*
+    Para que a borda faça parte da caixa, devemos utilizar a propriedade box-sizing. Essa propriedade possui os seguintes valores:
+    - content-box (Valor padrão): Com esse valor, o tamanho da caixa é definido somente pela altura e largura definidas à ela.
+    - border-box: Com esse valor, bordas e preenchimentos também são considerados no tamanho total da caixa.
+    Obs.: Margens não são consideradas no border-box.
+    */
+    box-sizing: border-box;
+}
+
+#botoes img:hover{
+    border: 2px solid white;
+    box-shadow: 3px 3px 6px black;
+    transform: translate(-4px, -4px);
+    /*
+    A propriedade transition é uma shorthand das propriedades:
+    - transition-property: Define o número de propriedades a ser animadas, podendo ser todas (valor all) ou alguamas, separando-as por vírgula.
+    - transition-duration: A duração da animação até se completar.
+    - transition-timing-function: Define a função de tempo da animação (Forma que a animação se comporta). Temos vários valores pssíveis, alguns como:
+    - ease (Valor padrão): Começa de forma lenta, acelera no meio e  termina de forma lenta.
+    - linear: Realiza a animação em uma velocidade que progride contantemente, começando da mesma forma que ela termina.
+    ease-in: Este valor representa uma transição que começa lentamente e depois acelera
+    ease-out: Este valor representa uma transição que começa lentamente e depois acelera.
+    ease-in-out: Este valor representa uma transição que começa lentamente, acelera no meio e depois desacelera novamente no final. O valor ease-in-out tem um desaceleramento mais acentuado no início e no final da transição do que o valor ease, tornado a animação mais perceptível.
+    */
+    /*
+    O shorthand da propriedade transition é:
+    transition: [property] [duration] [timing-function] [delay];
+    */
+    transition: all .3s ease-in-out;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#celular{
+    margin: auto;
+    background: url(../imagens/frame-iphone.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 311px;
+    height: 627px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+iframe{
+    width: 85.6%;
+    height: 74.9%;
+    position: relative;
+    top: 12.9%;
+    left: 7.2%;
+}
