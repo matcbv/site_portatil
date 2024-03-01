@@ -40,13 +40,13 @@ body{
     transform: translate(-4px, -4px);
     /*
     A propriedade transition é uma shorthand das propriedades:
-    - transition-property: Define o número de propriedades a ser animadas, podendo ser todas (valor all) ou alguamas, separando-as por vírgula.
+    - transition-property: Define o número de propriedades a ser animadas, podendo ser todas (valor all) ou algumas, separando-as por vírgula.
     - transition-duration: A duração da animação até se completar.
     - transition-timing-function: Define a função de tempo da animação (Forma que a animação se comporta). Temos vários valores pssíveis, alguns como:
     - ease (Valor padrão): Começa de forma lenta, acelera no meio e  termina de forma lenta.
     - linear: Realiza a animação em uma velocidade que progride contantemente, começando da mesma forma que ela termina.
     ease-in: Este valor representa uma transição que começa lentamente e depois acelera
-    ease-out: Este valor representa uma transição que começa lentamente e depois acelera.
+    ease-out: Este valor representa uma transição que começa rapidamente e depois desacelera.
     ease-in-out: Este valor representa uma transição que começa lentamente, acelera no meio e depois desacelera novamente no final. O valor ease-in-out tem um desaceleramento mais acentuado no início e no final da transição do que o valor ease, tornado a animação mais perceptível.
     */
     /*
