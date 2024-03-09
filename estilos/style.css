@@ -30,6 +30,9 @@ body{
     - content-box (Valor padrão): Com esse valor, o tamanho da caixa é definido somente pela altura e largura definidas à ela.
     - border-box: Com esse valor, bordas e preenchimentos também são considerados no tamanho total da caixa.
     Obs.: Margens não são consideradas no border-box.
+    Ex.:
+    - Com content-box: Largura = 200px, Preenchimento = 20px, Borda = 10px, Total = 230px
+     - Com border-box: Largura = 200px, Preenchimento = 20px, Borda = 10px, Total = 200px
     */
     box-sizing: border-box;
 }
