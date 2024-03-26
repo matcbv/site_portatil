@@ -68,7 +68,7 @@ main{
 #celular{
     margin: auto;
     background: url(../imagens/frame-iphone.png) no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     width: 311px;
     height: 627px;
